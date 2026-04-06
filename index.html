@@ -58,8 +58,14 @@
       document.getElementById("stardate").textContent = calculateStardate();
     }
 
+    // Update the displayed stardate every second
     update();
     setInterval(update, 1000);
+
+    // Reload the entire page every 30 seconds
+    setInterval(() => {
+      location.reload();
+    }, 30000);
   </script>
 
 </body>
